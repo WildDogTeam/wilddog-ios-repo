@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.platform           = :ios, "8.0"
   s.source             = { :http => "https://cdn.wilddog.com/sdk/ios/internal/PGSkinPrettifyEngine/PGSkinPrettifyEngine-0.0.1.zip" }
   
-  s.vendored_libraries = 'PGSkinPrettifyEngine/PGSkinPrettifyEngine.a'
-  s.public_header_files = 'PGSkinPrettifyEngine/*.h'
+  s.vendored_libraries = 'PGSkinPrettifyEngine/libPGSkinPrettifyEngine.a'
+  s.source_files = 'PGSkinPrettifyEngine/*.h'
   s.frameworks         = "AudioToolbox", "VideoToolbox", "AVFoundation", "GLKit", "CoreMedia", "UIKit", "Foundation"
   s.libraries          = "c++"
   s.xcconfig           = { "OTHER_LDFLAGS" => "-ObjC" }
